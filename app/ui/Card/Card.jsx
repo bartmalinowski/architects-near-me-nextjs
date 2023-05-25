@@ -5,6 +5,7 @@ import { useState } from "react";
 import Modal from "../Modal/Modal";
 import classesModal from "../Modal/Modal.module.css";
 import classes from "./Card.module.css";
+import Image from "next/image";
 
 const Card = ({ name, type, city, style }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,8 @@ const Card = ({ name, type, city, style }) => {
   return (
     <div>
       <div className={classes.directoryCardContainer}>
-        <div
+        <Image src={style} width={300} height={300} />
+        {/* <div
           className={`${classes.column} ${classes.directoryContainer}`}
           style={{
             backgroundImage: `url(${style})`,
@@ -40,7 +42,7 @@ const Card = ({ name, type, city, style }) => {
               more info
             </button>
           </div>
-        </div>
+        </div> */}
         <div className={classes.cardInfo}>
           <a href="index.html" target="_">
             {name}
