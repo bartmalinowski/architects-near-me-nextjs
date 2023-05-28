@@ -14,15 +14,21 @@ function MainNavigation() {
     <header>
       <nav className={classes.navbar}>
         <Link href="/" className={classes.navLogoLink}>
-          <div className={classes.navLogo}>ArchitectsNear.me</div>
+          <div className={classes.navLogo}>SwiadectwoEnergetyczne.co </div>
         </Link>
 
         <ul className={classes.navbarDesktop}>
           <li>
-            <Link href="/architects">ARCHITECTS</Link>
+            <Link href="/architects">AUDYTORZY</Link>
           </li>
           <li>
-            <Link href="/about">ABOUT</Link>
+            <Link href="/about">O NAS </Link>
+          </li>
+          <li>
+            <Link href="/about">USŁUGI </Link>
+          </li>
+          <li>
+            <Link href="/about">KONTAKT </Link>
           </li>
         </ul>
 

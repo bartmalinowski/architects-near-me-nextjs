@@ -30,7 +30,7 @@ const FilteredList = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        "https://react-architects-near-me-default-rtdb.firebaseio.com/directory.json"
+        "https://sche-nextjs-default-rtdb.europe-west1.firebasedatabase.app/directory.json"
       );
       const jsonData = await response.json();
       setData(Array.isArray(jsonData) ? jsonData : Object.values(jsonData));
@@ -38,7 +38,6 @@ const FilteredList = () => {
     };
 
     fetchData();
-    console.log("FetchGETfinished");
   }, []);
 
   useEffect(() => {
@@ -47,7 +46,7 @@ const FilteredList = () => {
 
   async function addArchitectHandler(architect) {
     const response = await fetch(
-      "https://react-architects-near-me-default-rtdb.firebaseio.com/directory.json",
+      "https://sche-nextjs-default-rtdb.europe-west1.firebasedatabase.app/directory.json",
       {
         method: "POST",
         body: JSON.stringify(architect),

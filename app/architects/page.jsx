@@ -4,7 +4,10 @@ const page = () => {
   return (
     <div>
       <div>
-        <h2>FIND YOUR ARCHITECT in New York, United States</h2>
+        <h2>
+          Wykaz osób uprawnionych do sporządzania świadectw charakterystyki
+          energetycznej:
+        </h2>
       </div>
       <FilteredList />
     </div>
